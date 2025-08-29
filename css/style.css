@@ -17,7 +17,7 @@ body{
 }
 
 header {
-  background-color: white;
+  background-color: black;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -35,8 +35,32 @@ header .logo {
   padding: 120px 0 ;
 }
 
+/* Styling the hero section */
 #hero {
  background-color: aqua;
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* Styling the left div of the hero section */
+#hero-leftdiv {
+  width: 350px;
+}
+
+#hero-leftdiv h1, h4 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#hero-leftdiv button {
+  margin-top: 15px;
+  width: 70px;
+  border-radius: 15px;
+  background-color: green;
 }
 
 #about {
