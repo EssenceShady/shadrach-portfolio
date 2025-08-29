@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeecee;
+}
+
+/* Styling Container */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: black;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+#hero, #about, #portfolio, #contact {
+  padding: 120px 0 ;
+}
+
+#hero {
+ background-color: aqua;
+}
+
+#about {
+ background-color: rgb(166, 196, 33);
+}
+
+#portfolio {
+ background-color: rgb(158, 24, 192);
+}
+
+#contact {
+ background-color: rgb(228, 93, 93);
+}
+
+
