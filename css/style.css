@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #eeecee;
@@ -15,14 +15,15 @@ body{
   width: 80%;
   margin: auto;
 }
-
+/* Styling the header */
 header {
   background-color: black;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: sticky; 
   top: 0;
+  z-index: 1000;     /* ensures header stays above other content */
 }
 
 header .logo {
@@ -31,48 +32,105 @@ header .logo {
   text-decoration: none;
 }
 
-#hero, #about, #portfolio, #contact {
-  padding: 120px 0 ;
+#hero,
+#about,
+#portfolio,
+#contact {
+  padding: 120px 0;
 }
 
-/* Styling the hero section */
+/* Hero Section */
 #hero {
- background-color: aqua;
+  background: #e5e7eb;
+  padding: 80px 0;
+  position: relative;
+  
 }
 
 #hero .container {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  
 }
 
-/* Styling the left div of the hero section */
 #hero-leftdiv {
-  width: 350px;
+  max-width: 600px;
 }
 
-#hero-leftdiv h1, h4 {
-  margin-top: 10px;
+#hero-leftdiv h1 {
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#hero-leftdiv h4 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+#hero-leftdiv p {
+  color: #444;
   margin-bottom: 20px;
 }
 
 #hero-leftdiv button {
-  margin-top: 15px;
-  width: 70px;
-  border-radius: 15px;
-  background-color: green;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#hero-leftdiv button:hover {
+  background: #6366f1;
+}
+
+/* Social Icons Bar */
+#hero-rightdiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.social-icons {
+  display: flex;
+  top: 20px;
+  flex-direction: column;
+  gap: 18px;
+  background: #38bdf8;
+  padding: 18px 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: absolute;
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  filter: invert(1);
+  transition: filter 0.2s;
+}
+
+.social-icons a:hover img {
+  filter: invert(0.5) sepia(1) hue-rotate(180deg) saturate(3);
 }
 
 #about {
- background-color: rgb(166, 196, 33);
+  background-color: rgb(166, 196, 33);
 }
 
 #portfolio {
- background-color: rgb(158, 24, 192);
+  background-color: rgb(158, 24, 192);
 }
 
 #contact {
- background-color: rgb(228, 93, 93);
+  background-color: rgb(228, 93, 93);
 }
-
-
