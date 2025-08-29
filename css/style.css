@@ -17,12 +17,18 @@ body{
 }
 
 header {
-  background-color: black;
+  background-color: white;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   position: sticky;
   top: 0;
+}
+
+header .logo {
+  font-size: 24px;
+  color: #444;
+  text-decoration: none;
 }
 
 #hero, #about, #portfolio, #contact {
