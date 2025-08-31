@@ -21,9 +21,9 @@ header {
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
-  position: sticky; 
+  position: sticky;
   top: 0;
-  z-index: 1000;     /* ensures header stays above other content */
+  z-index: 1000; /* ensures header stays above other content */
 }
 
 header .logo {
@@ -44,7 +44,6 @@ header .logo {
   background: #e5e7eb;
   padding: 80px 0;
   position: relative;
-  
 }
 
 #hero .container {
@@ -123,13 +122,135 @@ header .logo {
   filter: invert(0.5) sepia(1) hue-rotate(180deg) saturate(3);
 }
 
+/* About Session style */
 #about {
-  background-color: rgb(166, 196, 33);
+  background-color: #adb7cc;
+  padding: 80px 0;
 }
 
+#about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 950px;
+}
+
+.about-contact-btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.about-contact-btn:hover {
+  background: #0ea5e9;
+}
+
+#left-div {
+  flex: 1;
+  max-width: 450px;
+}
+
+#left-div h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#left-div p {
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+#left-div button {
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+#left-div button:hover {
+  background: #0ea5e9;
+}
+
+#right-div {
+  flex: 1;
+  max-width: 400px;
+  height: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+#right-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Adding media query inorder to change styles for different screens */
+@media (max-width: 1000px) {
+  #about .container {
+    flex-direction: column;
+    max-width: 98%;
+    gap: 24px;
+  }
+  #right-div {
+    max-width: 100%;
+    height: 200px;
+    margin-top: 24px;
+  }
+  #left-div {
+    max-width: 100%;
+  }
+}
+
+/* Portfolio section style */
 #portfolio {
   background-color: rgb(158, 24, 192);
 }
+
+.projects {
+  display: flex;
+} 
+
+.project-card {
+  display: flex;
+  gap: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 24px;
+  align-items: flex-start;
+}
+.project-image {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 
 #contact {
   background-color: rgb(228, 93, 93);
