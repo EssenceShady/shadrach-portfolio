@@ -1,0 +1,1 @@
+This is the second porfolio i created about my self, tho the texts are generated using lorem. This porfolio show case my inprovements as a web-designer. This is a single page webpage with four sections; the hero section, about, projects and contacts.
